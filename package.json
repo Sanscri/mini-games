@@ -9,7 +9,7 @@
   },
   "private": true,
   "dependencies": {
-    "@emotion/react": "11.9.3",
+    "@emotin/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "core-js": "^3.6.5",
     "react": "18.2.0",
