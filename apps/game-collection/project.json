@@ -19,7 +19,7 @@
           "apps/game-collection/src/favicon.ico",
           "apps/game-collection/src/assets"
         ],
-        "styles": [],
+        "styles": ["apps/game-collection/src/styles/styles.scss"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
