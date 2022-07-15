@@ -3,9 +3,18 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "serve:apps": "nx run-many --target=serve --projects=game-collection,minesweeper,tic-tac-toe --parallel",
+    "serve:game-collection": "nx serve game-collection",
+    "serve:minesweeper": "nx serve  minesweeper",
+    "serve:tic-tac-toe": "nx serve tic-tac-toe",
+    "build:apps": "nx run-many --target=build --projects=game-collection,minesweeper,tic-tac-toe --parallel",
+    "build:game-collection": "nx build game-collection",
+    "build:minesweeper": "nx build minesweeper",
+    "build:tic-tac-toe": "nx build tic-tac-toe",
+    "test": "nx test",
+    "lint": "nx workspace-lint && ng lint",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check"
   },
   "private": true,
   "dependencies": {
